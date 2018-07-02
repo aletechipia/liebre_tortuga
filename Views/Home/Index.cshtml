@@ -1,0 +1,20 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="uft-8" />
+    <title>tortuga vs Liebre</title>
+    <br />
+    <br />
+    <input value="Iniciar Carrera" onclick="pausaplay()" type="button">
+</head>
+</html>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script>function pausaplay() 
+{
+        $.ajax({
+
+            url: "Home/iniciar",
+            type: "GET",
+        });
+}</script>
